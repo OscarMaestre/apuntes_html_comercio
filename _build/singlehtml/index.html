@@ -1,0 +1,166 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>documentación de Apuntes de HTML - 1.0</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-apuntes-de-html-s-documentation">
+<h1>Welcome to Apuntes de HTML’s documentation!<a class="headerlink" href="#welcome-to-apuntes-de-html-s-documentation" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En este texto se da una introducción <strong>muy básica</strong> a la creación de páginas web. Para poder seguir estos apuntes basta con un ordenador que disponga de un editor de textos (puede bastar el «Bloc de Notas» de Windows). No es necesario disponer de conexión a Internet, ya que todos los ejemplos se almacenarán en el propio disco del equipo.</p>
+<p>Se recomienda la creación de una carpeta (puede hacerse por ejemplo en el directorio «Mis documentos») a la que llamaremos «html». Dentro de ella iremos creando otras carpetas a las que iremos llamando «ejemplo_01», «ejemplo_02», etc… Como se verá más adelante, dentro de cada carpeta iremos poniendo muchos archivos que compondrán las diversas web de ejemplo que vayamos creando.</p>
+<p>Los apuntes se han dividido en capítulos muy pequeños y lo más autocontenidos posible para intentar facilitar la asimilación de los conceptos en ellos presentados.</p>
+</div>
+<div class="section" id="los-navegadores">
+<h1>Los navegadores<a class="headerlink" href="#los-navegadores" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Cuando accedemos a Internet normalmente lo hacemos usando programas llamados «navegadores» (a veces también «browsers»). Hay muchos navegadores, algunos de los mas conocidos son:</p>
+<ul class="simple">
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Internet Explorer (ahora conocido como Edge.)</li>
+</ul>
+<div class="section" id="pregunta-navegadores">
+<h2>Pregunta: navegadores<a class="headerlink" href="#pregunta-navegadores" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><em>¿Se puede acceder a cualquier web con cualquier navegador?</em></p>
+<p>Respuesta: <strong>SÍ</strong>. De hecho aquí está una de las fortalezas de la web.</p>
+<div class="admonition important">
+<p class="first admonition-title">Importante</p>
+<p class="last">Los navegadores descargan páginas escritas en un lenguaje llamado HTML que está <strong>ESTANDARIZADO</strong>. Gracias al estándar, cualquier persona o empresa puede crear un navegador o incluso un servidor de páginas web (e intentar venderlo si así lo desea).</p>
+</div>
+<p>El organismo que estandariza el lenguaje HTML es el World Wide Web Consortium o W3C y es un organismo sin ánimo de lucro que establece las reglas del lenguaje. Gracias a estos estándares libres, abiertos y gratuitos la Web ha podido avanzar muchísimo. A modo de ejemplo, las figuras siguientes muestran una página web mostrada en distintos navegadores.</p>
+<div class="figure" id="id1">
+<a class="reference internal image-reference" href="_images/Captura_google.png"><img alt="_images/Captura_google.png" src="_images/Captura_google.png" style="width: 347.0px; height: 205.0px;" /></a>
+<p class="caption"><span class="caption-text">Captura de un buscador usando Mozilla Firefox.</span></p>
+</div>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="_images/Captura_google_chrome.png"><img alt="_images/Captura_google_chrome.png" src="_images/Captura_google_chrome.png" style="width: 331.5px; height: 202.0px;" /></a>
+<p class="caption"><span class="caption-text">Captura de un buscador usando Google Chrome.</span></p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">En realidad, podría haber pequeñas diferencias pero este problema ocurre cada vez menos y se espera que con el tiempo haya cada vez menos diferencias.</p>
+</div>
+<p>En suma, lo importante es que el lenguaje es <strong>abierto</strong> y el W3C incluso publica los estándares del lenguaje para aquellos interesados en conocer los detalles más internos. Sin embargo, tales detalles quedan fuera del alcance de estos apuntes.</p>
+</div>
+</div>
+<div class="section" id="primera-pagina-html">
+<h1>Primera página HTML<a class="headerlink" href="#primera-pagina-html" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Antes de empezar vayamos al directorio «Mis documentos» y entremos dentro de la carpeta «html» que hicimos en su momento. Fabriquemos una nueva carpeta a la que llamaremos «ejemplo_01». Deberíamos ver algo como lo que muestra la figura.</p>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="_images/estructura_carpetas.png"><img alt="_images/estructura_carpetas.png" src="_images/estructura_carpetas.png" style="width: 357.0px; height: 105.0px;" /></a>
+<p class="caption"><span class="caption-text">Estructura de carpetas</span></p>
+</div>
+<p>Si ahora abrimos el «Bloc de notas» deberíamos ver algo como esto (este programa debería estar en el botón «Inicio» y dentro de él en «Accesorios»).</p>
+<div class="figure" id="id4">
+<a class="reference internal image-reference" href="_images/bloc_de_notas.png"><img alt="_images/bloc_de_notas.png" src="_images/bloc_de_notas.png" style="width: 483.5px; height: 327.0px;" /></a>
+<p class="caption"><span class="caption-text">Bloc de notas</span></p>
+</div>
+<p>Ahora podremos utilizar este programa para teclear nuestra primera página web.</p>
+<p>Antes de empezar es importante conocer que HTML utiliza <strong>marcas</strong> para indicar como debe aparecer el texto en pantalla. Las marcas se escriben utilizando los símbolos «&lt;» y «&gt;». Dependiendo del teclado pueden estar en distintos sitios pero lo más común es que estén en la zona inferior izquierda del teclado y al lado de la tecla «z». Así una marca puede ser algo como «&lt;h1&gt;» o «&lt;table&gt;».</p>
+<p>Además las marcas suelen tener una <em>apertura</em> y un <em>cierre</em>. Una marca de apertura podría ser «&lt;h1&gt;» y una de cierre «&lt;/h1&gt;». El símbolo «/» suele estar en el teclado, en la tecla «7» y normalmente hay que pulsar la tecla «Mayúsculas» y «7» a la vez pero puede variar según el teclado.</p>
+<p>Usemos ahora el Bloc de notas (a veces también llamado «editor») para escribir esto:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>
+         Mi primera página web
+     <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Un ejemplo de página web<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Una vez teclado, nos vamos al menú «Archivo» y dentro de él veremos una opción que pone «Guardar como». Guardaremos el archivo con el nombre «index.html» e indicaremos que <strong>no vamos a guardar con la extensión .txt», sino que marcaremos la opción «Todos los archivos»</strong></p>
+<div class="figure" id="id5">
+<a class="reference internal image-reference" href="_images/bloc_de_notas_guardando.png"><img alt="_images/bloc_de_notas_guardando.png" src="_images/bloc_de_notas_guardando.png" style="width: 499.0px; height: 312.5px;" /></a>
+<p class="caption"><span class="caption-text">Bloc de notas</span></p>
+</div>
+<p>Por desgracia el «Bloc de notas» intenta siempre guardar los archivos como «archivo.txt» y al crear páginas web nos interesa guardarlas como «loquesea.html», así que necesitaremos hacer esto.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html#document-index">Apuntes de HTML</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html#document-index">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Oscar GG.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

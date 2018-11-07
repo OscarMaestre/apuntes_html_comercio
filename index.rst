@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Apuntes de HTML's documentation!
+Apuntes de HTML
 ===========================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Índice
 
 Introducción
 =======================
@@ -129,3 +129,137 @@ Si algo no funciona puede ser por alguno de estos motivos:
 * Si al hacer doble click la página no se abre puede que tengamos que abrir primero el navegador y desde él usar el menú "Archivo" y luego "Abrir". Despues podremos ir a la carpeta "Mis documentos", "html", "ejemplo_01" y seleccionar el archivo "index.html"
 * Si la página se abre pero no se muestra lo mismo que en la figura casi al 100% ha habido algún error al copiar las marcas. Vuelve al bloc de notas y repasa que todas las marcas sean exactamente iguales.
 
+Estructura de una página web
+===============================
+
+Analicemos otra vez el fichero anterior.
+
+.. code-block:: html
+
+   <!DOCTYPE html>
+   <html>
+    <head>
+        <title>
+            Mi primera página web
+        </title>
+    </head>
+    <body>
+        <h1>Un ejemplo de página web</h1>
+    </body>
+   </html>
+   
+   
+Como puede verse hay marcas de apertura (como "<html>") y de cierre (como "</html>"). Como puede verse se pueden meter marcas dentro de otras marcas y componer así la estructura básica de una página web. En los puntos siguientes analizamos la estructura.
+
+* Toda página lleva un preámbulo. En concreto la marca ``<!DOCTYPE html>``. Esta es una de las pocas marcas que no necesitarán cierre y en concreto sirve para indicar la versión del lenguaje. En el pasado se usaban otras cosas (direcciones web en lugar de "html" pero recientemente el mecanismo se simplificó.
+* Toda página empieza por la marca ``<html>`` y se cierra con ``</html>``.
+* Toda página debe llevar una cabecera y un cuerpo. La cabecera se marca con ``<head>`` y ``</head>`` y el cuerpo con ``<body>`` y ``</body>``.
+* La cabecera contendrá elementos **que no se mostrarán directamente en la página web**. Mas adelante veremos alguno de esos elementos, por ahora solo hemos puesto la marca ``<title>`` que muestra el título de la página (pero solo en la barra del navegador).
+* Dentro del cuerpo se pondrán todos los elementos que sí formen parte directa de la página: enlaces, imágenes, botones... En este caso y por simplificar solo hemos puesto un pequeño texto rodeado por la marca ``<h1>``. Esta marca en concreto hace que el texto aparezca como una "cabecera de nivel 1" (el navegador suele mostrar dicho texto con un tamaño más grande).
+
+Ejercicio: niveles de encabezamiento
+--------------------------------------
+
+Prueba a cambiar el fichero de la página para que contenga esto
+
+
+.. code-block:: html
+
+   <!DOCTYPE html>
+   <html>
+    <head>
+        <title>
+            Ejemplo de etiquetas de encabezamiento.
+        </title>
+    </head>
+    <body>
+        <h1>Soy un texto con h1</h1>
+        <h2>Soy un texto con h2</h2>
+        <h3>Soy un texto con h3</h3>
+        <h4>Soy un texto con h4</h4>
+        <h5>Soy un texto con h5</h5>
+        <h6>Soy un texto con h6</h6>
+    </body>
+   </html>
+
+Asegúrate de guardar,vuelve al navegador y usa el botón "recargar" (depende del navegador pero suele ser una flecha circular). También puedes hacer doble click sobre el fichero y/o usar la tecla F5 en el navegador. ¿Qué se muestra?
+
+HTML. Consideraciones previas
+================================
+
+Al crear una página web con HTML hay algunos detalles sutiles como los siguientes:
+
+Colocación de las marcas
+--------------------------
+Al navegador le da igual como coloquemos las marcas. Observa como el navegador muestra lo mismo que en los ejemplos anteriores cuando escribimos la misma página de esta manera.
+
+.. code-block:: html
+
+   <!DOCTYPE html>
+   <html><head>
+        <title>Mi primera página web</title>
+    </head>
+    <body>
+        <h1>Un ejemplo de página web</h1> </body>  </html>
+
+Como puede verse, el navegador ignora la posición de las marcas **y muestra exactamente lo mismo**. Debido a eso la costumbre es colocar las marcas de manera que "mas o menos se vea la estructura". De hecho podría escribirse toda la página web en una sola línea y el navegador seguiría haciendo lo mismo.
+
+.. figure:: imagenes/primera_pagina.png
+   :scale: 30%
+   
+   El navegador ignora la posición de las marcas.
+
+Líneas en blanco
+-----------------
+
+Las líneas en blanco que escribimos con la tecla ``ENTER`` **son completamente ignoradas**. Prueba esta página
+
+
+.. code-block:: html
+
+   <!DOCTYPE html>
+   <html>
+    <head>
+        <title>
+            Líneas en blanco
+        </title>
+    </head>
+    <body>
+        Este texto está en una línea.
+        Este texto se supone que está en otra línea distinta.
+        
+        
+        Este texto está varias líneas mas abajo.
+    </body>
+   </html>
+
+Sin embargo, observa lo que muestra el navegador.
+
+.. figure:: imagenes/lineas_en_blanco.png
+   :scale: 60%
+   
+   El navegador **ignora las líneas en blanco**
+   
+Una pregunta muy típica es entonces *"¿como consigo escribir texto en otra línea?*. La respuesta es: utilizando una marca especial llamada ``<br/>``. Observa cuidadosamente la posición de la barra, ya que en este caso no es un error. Algunas marcas que no llevan nada dentro pueden escribirse de esta manera.
+
+Existe otra marca llamada ``<p>`` (que se cierra como ``</p>``) que indica el comienzo y el final de un párrafo. Probemos a escribir esto.
+
+.. code-block:: html
+
+   <!DOCTYPE html>
+   <html>
+    <head>
+        <title> Párrafos  </title>
+    </head>
+    <body>
+        <p> Este texto es un párrafo que puede ser muy largo. </p>
+        <p> Este texto es un párrafo distinto. </p>
+    </body>
+   </html>
+
+Veremos que el navegador muestra esto:
+
+.. figure:: imagenes/parrafos.png
+   :scale: 60%
+   
+   Separación de párrafos hecha por el navegador.

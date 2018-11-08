@@ -290,14 +290,19 @@ Además estas marcas se pueden combinar unas dentro de otras pero **se debe reco
     En este texto <b>algunas cosas van en negrita</b>,
     mientras que <i>otras van en cursiva</i>. Hay otras que
     <u>se han subrayado</u>. Además, algunas cosas
-    van <b><i>negrita y cursiva</i></b> y algunas
+    van en <b><i>negrita y cursiva</i></b> y algunas
     <i><u><b>llevan las tres cosas a la vez</b></u></i>
     </body>
     </html>
 
-...entonces podremos visualizar lo que ocurre.
+...entonces podremos visualizar qué ocurre. Como puede verse se han mezclado las etiquetas y esto puede hacerse siempre y en cualquier orden pero **recordando cerrar en orden inverso**. Por ejemplo, en el archivo hemos puesto las tres cosas (negrita, cursiva y subrayado) abriendo con ``<i><u><b>``. Así, luego hemos cerrado con ``</b></u></i>``
 
-
-.. rubric:: Notas a pie de página
+.. figure:: imagenes/primeras_marcas.png
+   :scale: 60%
    
-   [#index] En realidad una página se puede llamar como se quiera, pero la costumbre es que la página inicial de un sitio web se llame precisamente así "index.html"
+   Primeras marcas
+   
+   
+.. rubric:: Footnotes
+   
+.. [#index] En realidad una página se puede llamar como se quiera, pero la costumbre es que la página inicial de un sitio web se llame precisamente así "index.html"

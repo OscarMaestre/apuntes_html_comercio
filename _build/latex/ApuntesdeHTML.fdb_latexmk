@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex ApuntesdeHTML.idx"] 1541408435 "ApuntesdeHTML.idx" "ApuntesdeHTML.ind" "ApuntesdeHTML" 1541617995
-  "ApuntesdeHTML.idx" 1541617994 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex ApuntesdeHTML.idx"] 1541408435 "ApuntesdeHTML.idx" "ApuntesdeHTML.ind" "ApuntesdeHTML" 1541673296
+  "ApuntesdeHTML.idx" 1541673295 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "ApuntesdeHTML.ind"
   "ApuntesdeHTML.ilg"
-["pdflatex"] 1541617994 "ApuntesdeHTML.tex" "ApuntesdeHTML.pdf" "ApuntesdeHTML" 1541617995
+  "ApuntesdeHTML.ind"
+["pdflatex"] 1541673295 "ApuntesdeHTML.tex" "ApuntesdeHTML.pdf" "ApuntesdeHTML" 1541673296
   "/etc/texmf/web2c/texmf.cnf" 1536324598 838 1a7f35fa13839e48fb114eb1d6de2cf3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -160,11 +160,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1536336563 124245 6a5fc065740f6b6cfed57c45ca09859c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1539355785 873159 eed11dcc19b30cdaf8ff5194ca910570 ""
-  "ApuntesdeHTML.aux" 1541617995 5051 4be719cf6fbd97df4878a3402b811bfb ""
+  "ApuntesdeHTML.aux" 1541673295 5456 79e3a044fa9f4bb6d5d0acbb649286af ""
   "ApuntesdeHTML.ind" 1541408435 0 d41d8cd98f00b204e9800998ecf8427e "makeindex ApuntesdeHTML.idx"
-  "ApuntesdeHTML.out" 1541617995 1500 aacdab326aa7e61f0873f25a5d6194b0 ""
-  "ApuntesdeHTML.tex" 1541617994 20760 cc3ce99351260cefa438836ff69b6e19 ""
-  "ApuntesdeHTML.toc" 1541617995 786 cd82219e7e8219c28b257adaa7559e30 ""
+  "ApuntesdeHTML.out" 1541673295 1622 f8fa452d40d81c08abfa207d3c2a3036 ""
+  "ApuntesdeHTML.tex" 1541673294 24249 c2a02754ee41b5c5a2525d9d30636ed3 ""
+  "ApuntesdeHTML.toc" 1541673295 857 8c49c9a84a07e41c3a555bab6d46a526 ""
   "Captura_google.png" 1541407370 23532 76c8dcd28a570debe68552fd8bbc2320 ""
   "Captura_google_chrome.png" 1541409080 26707 e2910d97a444030cd20f151458728987 ""
   "bloc_de_notas.png" 1541409595 15594 0bdf7a2213c448931fc1286a93874a7f ""
@@ -175,14 +175,15 @@
   "lineas_en_blanco.png" 1541617212 11197 917dde128fe13929f8cf21c9b51f8994 ""
   "parrafos.png" 1541617848 7546 22432d13cea0412552ef9ab88f2fbb67 ""
   "primera_pagina.png" 1541411564 10340 8b136e065a107efcf78ccfd6a18334e4 ""
+  "primeras_marcas.png" 1541673035 11755 5d6447addc5813d5e0b8f223032d67af ""
   "sphinx.sty" 1541013876 69913 6a504e8686d0f955660c2147d7b57d6f ""
-  "sphinxhighlight.sty" 1541617994 8137 38a433148fcb7611515a989ff1750dd5 ""
+  "sphinxhighlight.sty" 1541673294 8137 38a433148fcb7611515a989ff1750dd5 ""
   "sphinxmanual.cls" 1541013876 3529 fa4d4e9f811425ef5966e441eeee9f7f ""
   "sphinxmulticell.sty" 1541013876 14618 0defbdc8536ad2e67f1eac6a1431bc55 ""
   (generated)
-  "ApuntesdeHTML.pdf"
-  "ApuntesdeHTML.toc"
   "ApuntesdeHTML.idx"
+  "ApuntesdeHTML.pdf"
   "ApuntesdeHTML.log"
-  "ApuntesdeHTML.aux"
   "ApuntesdeHTML.out"
+  "ApuntesdeHTML.aux"
+  "ApuntesdeHTML.toc"

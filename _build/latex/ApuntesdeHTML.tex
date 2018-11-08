@@ -55,7 +55,7 @@
 
 
 \title{Apuntes de HTML }
-\date{07 de noviembre de 2018}
+\date{08 de noviembre de 2018}
 \release{1.0}
 \author{Oscar GG}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -119,14 +119,14 @@ El organismo que estandariza el lenguaje HTML es el World Wide Web Consortium o 
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.5]{{Captura_google}.png}
-\caption{Captura de un buscador usando Mozilla Firefox.}\label{\detokenize{index:id1}}\end{figure}
+\caption{Captura de un buscador usando Mozilla Firefox.}\label{\detokenize{index:id2}}\end{figure}
 
 \begin{figure}[htbp]
 \centering
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.5]{{Captura_google_chrome}.png}
-\caption{Captura de un buscador usando Google Chrome.}\label{\detokenize{index:id2}}\end{figure}
+\caption{Captura de un buscador usando Google Chrome.}\label{\detokenize{index:id3}}\end{figure}
 
 \begin{sphinxadmonition}{warning}{Advertencia:}
 En realidad, podría haber pequeñas diferencias pero este problema ocurre cada vez menos y se espera que con el tiempo haya cada vez menos diferencias.
@@ -144,7 +144,7 @@ Antes de empezar vayamos al directorio «Mis documentos» y entremos dentro de l
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.5]{{estructura_carpetas}.png}
-\caption{Estructura de carpetas}\label{\detokenize{index:id3}}\end{figure}
+\caption{Estructura de carpetas}\label{\detokenize{index:id4}}\end{figure}
 
 Si ahora abrimos el «Bloc de notas» deberíamos ver algo como esto (este programa debería estar en el botón «Inicio» y dentro de él en «Accesorios»).
 
@@ -153,7 +153,7 @@ Si ahora abrimos el «Bloc de notas» deberíamos ver algo como esto (este progr
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.25]{{bloc_de_notas}.png}
-\caption{Bloc de notas}\label{\detokenize{index:id4}}\end{figure}
+\caption{Bloc de notas}\label{\detokenize{index:id5}}\end{figure}
 
 Ahora podremos utilizar este programa para teclear nuestra primera página web.
 
@@ -178,14 +178,18 @@ Usemos ahora el Bloc de notas (a veces también llamado «editor») para escribi
 \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
 \end{sphinxVerbatim}
 
-Una vez teclado, nos vamos al menú «Archivo» y dentro de él veremos una opción que pone «Guardar como». Guardaremos el archivo con el nombre «index.html» e indicaremos que \sphinxstylestrong{no vamos a guardar con la extensión .txt, sino que marcaremos la opción «Todos los archivos»}
+Una vez teclado, nos vamos al menú «Archivo» y dentro de él veremos una opción que pone «Guardar como». Guardaremos el archivo con el nombre «index.html» %
+\begin{footnote}[1]\sphinxAtStartFootnote
+En realidad una página se puede llamar como se quiera, pero la costumbre es que la página inicial de un sitio web se llame precisamente así «index.html»
+%
+\end{footnote} e indicaremos que \sphinxstylestrong{no vamos a guardar con la extensión .txt, sino que marcaremos la opción «Todos los archivos»}
 
 \begin{figure}[htbp]
 \centering
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.3]{{bloc_de_notas_guardando}.png}
-\caption{Guardando el archivo.}\label{\detokenize{index:id5}}\end{figure}
+\caption{Guardando el archivo.}\label{\detokenize{index:id6}}\end{figure}
 
 Por desgracia el «Bloc de notas» intenta siempre guardar los archivos como «archivo.txt» y al crear páginas web nos interesa guardarlas como «loquesea.html», así que necesitaremos hacer esto.
 
@@ -196,7 +200,7 @@ Una vez hecho esto podemos ir a la carpeta «Mis documentos» y dentro de «html
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.3]{{ejemplo_01_index}.png}
-\caption{Nuestro archivo index.html}\label{\detokenize{index:id6}}\end{figure}
+\caption{Nuestro archivo index.html}\label{\detokenize{index:id7}}\end{figure}
 
 Si se hace doble click en dicho archivo deberíamos ver como el navegador de nuestro sistema muestra nuestra primera página web.
 
@@ -205,7 +209,7 @@ Si se hace doble click en dicho archivo deberíamos ver como el navegador de nue
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.3]{{primera_pagina}.png}
-\caption{El navegador mostrando nuestra primera página web.}\label{\detokenize{index:id7}}\end{figure}
+\caption{El navegador mostrando nuestra primera página web.}\label{\detokenize{index:id8}}\end{figure}
 
 Si algo no funciona puede ser por alguno de estos motivos:
 \begin{itemize}
@@ -310,7 +314,7 @@ Como puede verse, el navegador ignora la posición de las marcas \sphinxstylestr
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.3]{{primera_pagina}.png}
-\caption{El navegador ignora la posición de las marcas.}\label{\detokenize{index:id8}}\end{figure}
+\caption{El navegador ignora la posición de las marcas.}\label{\detokenize{index:id9}}\end{figure}
 
 
 \section{Líneas en blanco}
@@ -343,7 +347,7 @@ Sin embargo, observa lo que muestra el navegador.
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.6]{{lineas_en_blanco}.png}
-\caption{El navegador \sphinxstylestrong{ignora las líneas en blanco}}\label{\detokenize{index:id9}}\end{figure}
+\caption{El navegador \sphinxstylestrong{ignora las líneas en blanco}}\label{\detokenize{index:id10}}\end{figure}
 
 Una pregunta muy típica es entonces \sphinxstyleemphasis{«¿como consigo escribir texto en otra línea?}. La respuesta es: utilizando una marca especial llamada \sphinxcode{\sphinxupquote{\textless{}br/\textgreater{}}}. Observa cuidadosamente la posición de la barra, ya que en este caso no es un error. Algunas marcas que no llevan nada dentro pueden escribirse de esta manera.
 
@@ -370,7 +374,52 @@ Veremos que el navegador muestra esto:
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.6]{{parrafos}.png}
-\caption{Separación de párrafos hecha por el navegador.}\label{\detokenize{index:id10}}\end{figure}
+\caption{Separación de párrafos hecha por el navegador.}\label{\detokenize{index:id11}}\end{figure}
+
+
+\chapter{Primeras marcas}
+\label{\detokenize{index:primeras-marcas}}
+A continuación veremos algunas marcas que modifican el texto
+\begin{itemize}
+\item {} 
+La marca \sphinxcode{\sphinxupquote{\textless{}b\textgreater{}}} permite poner un trozo de texto en negrita.
+
+\item {} 
+La marca \sphinxcode{\sphinxupquote{\textless{}i\textgreater{}}} permite poner un trozo de texto en cursiva.
+
+\item {} 
+La marca \sphinxcode{\sphinxupquote{\textless{}u\textgreater{}}} permite subrayar un trozo de texto.
+
+\end{itemize}
+
+Además estas marcas se pueden combinar unas dentro de otras pero \sphinxstylestrong{se debe recordar cerrar las marcas en orden inverso al que se abrieron}. A modo de ejemplo, vayamos a «Mis documentos» y dentro de ella a la carpeta «html» y fabriquemos una carpeta «ejemplo\_02». Si abrimos el bloc de notas y creamos este archivo…
+
+\fvset{hllines={, ,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}Primeras marcas\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+En este texto \PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}algunas cosas van en negrita\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}},
+mientras que \PYG{p}{\PYGZlt{}}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}otras van en cursiva\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}. Hay otras que
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}se han subrayado\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}. Además, algunas cosas
+van \PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}negrita y cursiva\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}} y algunas
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}llevan las tres cosas a la vez\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\end{sphinxVerbatim}
+
+…entonces podremos visualizar qué ocurre. Como puede verse se han mezclado las etiquetas y esto puede hacerse siempre y en cualquier orden pero \sphinxstylestrong{recordando cerrar en orden inverso}. Por ejemplo, en el archivo hemos puesto las tres cosas (negrita, cursiva y subrayado) abriendo con \sphinxcode{\sphinxupquote{\textless{}i\textgreater{}\textless{}u\textgreater{}\textless{}b\textgreater{}}}. Así, luego hemos cerrado con \sphinxcode{\sphinxupquote{\textless{}/b\textgreater{}\textless{}/u\textgreater{}\textless{}/i\textgreater{}}}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.6]{{primeras_marcas}.png}
+\caption{Primeras marcas}\label{\detokenize{index:id12}}\end{figure}
 
 
 

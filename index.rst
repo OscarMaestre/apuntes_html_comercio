@@ -96,7 +96,7 @@ Usemos ahora el Bloc de notas (a veces también llamado "editor") para escribir 
     </body>
    </html>
    
-Una vez teclado, nos vamos al menú "Archivo" y dentro de él veremos una opción que pone "Guardar como". Guardaremos el archivo con el nombre "index.html" e indicaremos que **no vamos a guardar con la extensión .txt, sino que marcaremos la opción "Todos los archivos"**
+Una vez teclado, nos vamos al menú "Archivo" y dentro de él veremos una opción que pone "Guardar como". Guardaremos el archivo con el nombre "index.html" [#index]_ e indicaremos que **no vamos a guardar con la extensión .txt, sino que marcaremos la opción "Todos los archivos"**
 
 .. figure:: imagenes/bloc_de_notas_guardando.png
    :scale: 30%
@@ -129,6 +129,9 @@ Si algo no funciona puede ser por alguno de estos motivos:
 * Si al hacer doble click la página no se abre puede que tengamos que abrir primero el navegador y desde él usar el menú "Archivo" y luego "Abrir". Despues podremos ir a la carpeta "Mis documentos", "html", "ejemplo_01" y seleccionar el archivo "index.html"
 * Si la página se abre pero no se muestra lo mismo que en la figura casi al 100% ha habido algún error al copiar las marcas. Vuelve al bloc de notas y repasa que todas las marcas sean exactamente iguales.
 
+
+
+   
 Estructura de una página web
 ===============================
 
@@ -263,3 +266,38 @@ Veremos que el navegador muestra esto:
    :scale: 60%
    
    Separación de párrafos hecha por el navegador.
+   
+Primeras marcas
+=============================================================================
+
+A continuación veremos algunas marcas que modifican el texto
+
+* La marca ``<b>`` permite poner un trozo de texto en negrita.
+* La marca ``<i>`` permite poner un trozo de texto en cursiva.
+* La marca ``<u>`` permite subrayar un trozo de texto.
+
+Además estas marcas se pueden combinar unas dentro de otras pero **se debe recordar cerrar las marcas en orden inverso al que se abrieron**. A modo de ejemplo, vayamos a "Mis documentos" y dentro de ella a la carpeta "html" y fabriquemos una carpeta "ejemplo_02". Si abrimos el bloc de notas y creamos este archivo...
+
+.. code-block:: html
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Primeras marcas</title>
+    </head>
+    
+    <body>
+    En este texto <b>algunas cosas van en negrita</b>,
+    mientras que <i>otras van en cursiva</i>. Hay otras que
+    <u>se han subrayado</u>. Además, algunas cosas
+    van <b><i>negrita y cursiva</i></b> y algunas
+    <i><u><b>llevan las tres cosas a la vez</b></u></i>
+    </body>
+    </html>
+
+...entonces podremos visualizar lo que ocurre.
+
+
+.. rubric:: Notas a pie de página
+   
+   [#index] En realidad una página se puede llamar como se quiera, pero la costumbre es que la página inicial de un sitio web se llame precisamente así "index.html"

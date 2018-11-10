@@ -271,6 +271,79 @@ van en <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&
 <a class="reference internal image-reference" href="_images/primeras_marcas.png"><img alt="_images/primeras_marcas.png" src="_images/primeras_marcas.png" style="width: 683.4px; height: 79.8px;" /></a>
 <p class="caption"><span class="caption-text">Primeras marcas</span></p>
 </div>
+</div>
+<div class="section" id="enlaces-e-imagenes">
+<h1>Enlaces e imágenes<a class="headerlink" href="#enlaces-e-imagenes" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Las etiquetas de formato básico ya muestran algo, pero con esto no es suficiente para crear una página web. En esta sección veremos como crear enlaces y como insertar imágenes.</p>
+<p>Para crear un enlace vamos a necesitar dos cosas:</p>
+<ol class="arabic simple">
+<li>Un texto que el usuario verá.</li>
+<li>Una dirección web donde queremos que el usuario vaya al pulsar el enlace.</li>
+</ol>
+<p>Fabriquemos una carpeta «ejemplo_03» y dentro de ella creemos el siguiente archivo al que llamaremos «index.html»</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Nuestro primer enlace<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;www.google.com&quot;</span><span class="p">&gt;</span>Esto es un enlace a Google.<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Si lo guardamos y lo abrimos con el navegador veremos algo como esto (obsérvese que lo hemos abierto en un navegador diferente, pero esto no influirá en nada).</p>
+<div class="figure" id="id13">
+<img alt="_images/primer_enlace.png" src="_images/primer_enlace.png" />
+<p class="caption"><span class="caption-text">Un primer enlace.</span></p>
+</div>
+<p>Como puede verse, ahora la etiqueta no es simplemente <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code> sino que hay información adicional. Esta información adicional a las marcas se llama <strong>atributo</strong>. Así esta marca dice dos cosas:</p>
+<ol class="arabic simple">
+<li>Lo que hay dentro de la marca debe mostrarse como un enlace. Dentro de la marca podemos poner el texto que queramos.</li>
+<li>Dicho texto, al ser pulsado llevará al usuario a <code class="docutils literal notranslate"><span class="pre">http://google.com</span></code>.</li>
+</ol>
+<p>A continuación vamos a ver como trabajar con imágenes. Antes de seguir consigue una imagen (puedes descargarla de Internet o mirar en «Mis imágenes»). Copia el fichero de imagen al directorio «ejemplo_02» que hemos creado (es decir, deberías tener en la carpeta el fichero «index.html» y el fichero de imagen, en nuestro caso se llama «estrella.jpg». Una vez tengas el fichero amplia el fichero y añade la imagen debajo del enlace, el fichero te debería quedar así:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Nuestro primer enlace<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;www.google.com&quot;</span><span class="p">&gt;</span>Esto es un enlace a Google.<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;estrella.jpg&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;128px&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;128px&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>A continuación se puede ver el resultado.</p>
+<div class="figure" id="id14">
+<img alt="_images/primera_imagen.png" src="_images/primera_imagen.png" />
+<p class="caption"><span class="caption-text">Un ejemplo de imagen.</span></p>
+</div>
+<p>Como puede verse, la etiqueta <code class="docutils literal notranslate"><span class="pre">img</span></code> ahora lleva 3 atributos:</p>
+<ul class="simple">
+<li>El atributo <code class="docutils literal notranslate"><span class="pre">src</span></code> indica el nombre del fichero de imagen que hay que mostrar.</li>
+<li>El atributo <code class="docutils literal notranslate"><span class="pre">width</span></code> indica la anchura en píxeles que debe tener la imagen.</li>
+<li>El atributo <code class="docutils literal notranslate"><span class="pre">height</span></code> indica la altura que debe tener la imagen.</li>
+</ul>
+<p>Trabajar con imágenes puede ser complicado. Si cogemos una imagen pequeña y la forzamos a que tenga un tamaño muy grande hará que se vean los píxeles. Si cogemos una imagen muy grande y la forzamos a que tome un tamaño pequeño no producirá ningún problema visual (de hecho se veá muy bien) pero hará que la página web sea mas «pesada» y pueda tardar más en cargar.</p>
+<div class="section" id="ejercicio-mezcla-de-etiquetas">
+<h2>Ejercicio: mezcla de etiquetas.<a class="headerlink" href="#ejercicio-mezcla-de-etiquetas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Teclea esta página pero antes de abrirla en el navegador piensa: ¿qué crees que ocurrirá?</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ejercicio<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;www.google.com&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;estrella.jpg&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;128px&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;128px&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
 <p class="rubric">Footnotes</p>
 <table class="docutils footnote" frame="void" id="index" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -278,6 +351,7 @@ van en <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&
 <tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>En realidad una página se puede llamar como se quiera, pero la costumbre es que la página inicial de un sitio web se llame precisamente así «index.html»</td></tr>
 </tbody>
 </table>
+</div>
 </div>
 
 

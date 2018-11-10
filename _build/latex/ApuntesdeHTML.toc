@@ -9,3 +9,5 @@
 \contentsline {section}{\numberline {5.1}Colocaci\IeC {\'o}n de las marcas}{13}{section.5.1}
 \contentsline {section}{\numberline {5.2}L\IeC {\'\i }neas en blanco}{14}{section.5.2}
 \contentsline {chapter}{\numberline {6}Primeras marcas}{17}{chapter.6}
+\contentsline {chapter}{\numberline {7}Enlaces e im\IeC {\'a}genes}{19}{chapter.7}
+\contentsline {section}{\numberline {7.1}Ejercicio: mezcla de etiquetas.}{20}{section.7.1}

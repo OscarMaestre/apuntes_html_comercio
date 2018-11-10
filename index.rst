@@ -301,7 +301,97 @@ Además estas marcas se pueden combinar unas dentro de otras pero **se debe reco
    :scale: 60%
    
    Primeras marcas
-   
+
+Enlaces e imágenes
+=================================================
+
+
+
+
+
+Las etiquetas de formato básico ya muestran algo, pero con esto no es suficiente para crear una página web. En esta sección veremos como crear enlaces y como insertar imágenes.
+
+Para crear un enlace vamos a necesitar dos cosas:
+
+1. Un texto que el usuario verá.
+2. Una dirección web donde queremos que el usuario vaya al pulsar el enlace.
+
+Fabriquemos una carpeta "ejemplo_03" y dentro de ella creemos el siguiente archivo al que llamaremos "index.html"
+
+
+.. code-block:: html
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Nuestro primer enlace</title>
+    </head>
+    <body>
+        <a href="www.google.com">Esto es un enlace a Google.</a>
+    </body>
+    </html>
+
+Si lo guardamos y lo abrimos con el navegador veremos algo como esto (obsérvese que lo hemos abierto en un navegador diferente, pero esto no influirá en nada).
+
+.. figure:: imagenes/primer_enlace.png
+
+   Un primer enlace.
+
+Como puede verse, ahora la etiqueta no es simplemente ``<a>`` sino que hay información adicional. Esta información adicional a las marcas se llama **atributo**. Así esta marca dice dos cosas:
+
+1. Lo que hay dentro de la marca debe mostrarse como un enlace. Dentro de la marca podemos poner el texto que queramos.
+2. Dicho texto, al ser pulsado llevará al usuario a ``http://google.com``.
+
+A continuación vamos a ver como trabajar con imágenes. Antes de seguir consigue una imagen (puedes descargarla de Internet o mirar en "Mis imágenes"). Copia el fichero de imagen al directorio "ejemplo_02" que hemos creado (es decir, deberías tener en la carpeta el fichero "index.html" y el fichero de imagen, en nuestro caso se llama "estrella.jpg". Una vez tengas el fichero amplia el fichero y añade la imagen debajo del enlace, el fichero te debería quedar así:
+
+.. code-block:: html
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Nuestro primer enlace</title>
+    </head>
+    <body>
+        <a href="www.google.com">Esto es un enlace a Google.</a>
+        <br/>
+        <img src="estrella.jpg" width="128px" height="128px">
+    </body>
+    </html>
+
+A continuación se puede ver el resultado.
+
+
+.. figure:: imagenes/primera_imagen.png
+
+   Un ejemplo de imagen.
+
+Como puede verse, la etiqueta ``img`` ahora lleva 3 atributos:
+
+* El atributo ``src`` indica el nombre del fichero de imagen que hay que mostrar.
+* El atributo ``width`` indica la anchura en píxeles que debe tener la imagen.
+* El atributo ``height`` indica la altura que debe tener la imagen.
+
+Trabajar con imágenes puede ser complicado. Si cogemos una imagen pequeña y la forzamos a que tenga un tamaño muy grande hará que se vean los píxeles. Si cogemos una imagen muy grande y la forzamos a que tome un tamaño pequeño no producirá ningún problema visual (de hecho se veá muy bien) pero hará que la página web sea mas "pesada" y pueda tardar más en cargar.
+
+Ejercicio: mezcla de etiquetas.
+--------------------------------------------------
+
+Teclea esta página pero antes de abrirla en el navegador piensa: ¿qué crees que ocurrirá?
+
+.. code-block:: html
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Ejercicio</title>
+    </head>
+    <body>
+        <a href="www.google.com">
+            <img src="estrella.jpg" width="128px" height="128px">
+        </a>
+    </body>
+    </html>
+
    
 .. rubric:: Footnotes
    

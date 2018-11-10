@@ -55,7 +55,7 @@
 
 
 \title{Apuntes de HTML }
-\date{08 de noviembre de 2018}
+\date{10 de noviembre de 2018}
 \release{1.0}
 \author{Oscar GG}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -406,7 +406,7 @@ Además estas marcas se pueden combinar unas dentro de otras pero \sphinxstylest
 En este texto \PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}algunas cosas van en negrita\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}},
 mientras que \PYG{p}{\PYGZlt{}}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}otras van en cursiva\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}. Hay otras que
 \PYG{p}{\PYGZlt{}}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}se han subrayado\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}. Además, algunas cosas
-van \PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}negrita y cursiva\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}} y algunas
+van en \PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}negrita y cursiva\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}} y algunas
 \PYG{p}{\PYGZlt{}}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}llevan las tres cosas a la vez\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{u}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{i}\PYG{p}{\PYGZgt{}}
 \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
 \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
@@ -420,6 +420,122 @@ van \PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n+nt
 
 \noindent\sphinxincludegraphics[scale=0.6]{{primeras_marcas}.png}
 \caption{Primeras marcas}\label{\detokenize{index:id12}}\end{figure}
+
+
+\chapter{Enlaces e imágenes}
+\label{\detokenize{index:enlaces-e-imagenes}}
+Las etiquetas de formato básico ya muestran algo, pero con esto no es suficiente para crear una página web. En esta sección veremos como crear enlaces y como insertar imágenes.
+
+Para crear un enlace vamos a necesitar dos cosas:
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+Un texto que el usuario verá.
+
+\item {} 
+Una dirección web donde queremos que el usuario vaya al pulsar el enlace.
+
+\end{enumerate}
+
+Fabriquemos una carpeta «ejemplo\_03» y dentro de ella creemos el siguiente archivo al que llamaremos «index.html»
+
+\fvset{hllines={, ,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}Nuestro primer enlace\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{href}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}www.google.com\PYGZdq{}}\PYG{p}{\PYGZgt{}}Esto es un enlace a Google.\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\end{sphinxVerbatim}
+
+Si lo guardamos y lo abrimos con el navegador veremos algo como esto (obsérvese que lo hemos abierto en un navegador diferente, pero esto no influirá en nada).
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{primer_enlace}.png}
+\caption{Un primer enlace.}\label{\detokenize{index:id13}}\end{figure}
+
+Como puede verse, ahora la etiqueta no es simplemente \sphinxcode{\sphinxupquote{\textless{}a\textgreater{}}} sino que hay información adicional. Esta información adicional a las marcas se llama \sphinxstylestrong{atributo}. Así esta marca dice dos cosas:
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+Lo que hay dentro de la marca debe mostrarse como un enlace. Dentro de la marca podemos poner el texto que queramos.
+
+\item {} 
+Dicho texto, al ser pulsado llevará al usuario a \sphinxcode{\sphinxupquote{http://google.com}}.
+
+\end{enumerate}
+
+A continuación vamos a ver como trabajar con imágenes. Antes de seguir consigue una imagen (puedes descargarla de Internet o mirar en «Mis imágenes»). Copia el fichero de imagen al directorio «ejemplo\_02» que hemos creado (es decir, deberías tener en la carpeta el fichero «index.html» y el fichero de imagen, en nuestro caso se llama «estrella.jpg». Una vez tengas el fichero amplia el fichero y añade la imagen debajo del enlace, el fichero te debería quedar así:
+
+\fvset{hllines={, ,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}Nuestro primer enlace\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{href}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}www.google.com\PYGZdq{}}\PYG{p}{\PYGZgt{}}Esto es un enlace a Google.\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{br}\PYG{p}{/}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{img} \PYG{n+na}{src}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}estrella.jpg\PYGZdq{}} \PYG{n+na}{width}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}128px\PYGZdq{}} \PYG{n+na}{height}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}128px\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\end{sphinxVerbatim}
+
+A continuación se puede ver el resultado.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{primera_imagen}.png}
+\caption{Un ejemplo de imagen.}\label{\detokenize{index:id14}}\end{figure}
+
+Como puede verse, la etiqueta \sphinxcode{\sphinxupquote{img}} ahora lleva 3 atributos:
+\begin{itemize}
+\item {} 
+El atributo \sphinxcode{\sphinxupquote{src}} indica el nombre del fichero de imagen que hay que mostrar.
+
+\item {} 
+El atributo \sphinxcode{\sphinxupquote{width}} indica la anchura en píxeles que debe tener la imagen.
+
+\item {} 
+El atributo \sphinxcode{\sphinxupquote{height}} indica la altura que debe tener la imagen.
+
+\end{itemize}
+
+Trabajar con imágenes puede ser complicado. Si cogemos una imagen pequeña y la forzamos a que tenga un tamaño muy grande hará que se vean los píxeles. Si cogemos una imagen muy grande y la forzamos a que tome un tamaño pequeño no producirá ningún problema visual (de hecho se veá muy bien) pero hará que la página web sea mas «pesada» y pueda tardar más en cargar.
+
+
+\section{Ejercicio: mezcla de etiquetas.}
+\label{\detokenize{index:ejercicio-mezcla-de-etiquetas}}
+Teclea esta página pero antes de abrirla en el navegador piensa: ¿qué crees que ocurrirá?
+
+\fvset{hllines={, ,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}Ejercicio\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{href}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}www.google.com\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{img} \PYG{n+na}{src}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}estrella.jpg\PYGZdq{}} \PYG{n+na}{width}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}128px\PYGZdq{}} \PYG{n+na}{height}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}128px\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\end{sphinxVerbatim}
 
 
 

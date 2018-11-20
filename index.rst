@@ -87,6 +87,7 @@ Usemos ahora el Bloc de notas (a veces también llamado "editor") para escribir 
    <!DOCTYPE html>
    <html>
     <head>
+        <meta charset="utf-8">
         <title>
             Mi primera página web
         </title>
@@ -128,6 +129,7 @@ Si algo no funciona puede ser por alguno de estos motivos:
 
 * Si al hacer doble click la página no se abre puede que tengamos que abrir primero el navegador y desde él usar el menú "Archivo" y luego "Abrir". Despues podremos ir a la carpeta "Mis documentos", "html", "ejemplo_01" y seleccionar el archivo "index.html"
 * Si la página se abre pero no se muestra lo mismo que en la figura casi al 100% ha habido algún error al copiar las marcas. Vuelve al bloc de notas y repasa que todas las marcas sean exactamente iguales.
+* Si ves que se ven mal los acentos prueba a modificar la marca ``<meta>``. Escribe ``<meta charset="iso-8859-1">``.
 
 
 
@@ -142,6 +144,7 @@ Analicemos otra vez el fichero anterior.
    <!DOCTYPE html>
    <html>
     <head>
+        <meta charset="utf-8">
         <title>
             Mi primera página web
         </title>
@@ -158,6 +161,7 @@ Como puede verse hay marcas de apertura (como "<html>") y de cierre (como "</htm
 * Toda página empieza por la marca ``<html>`` y se cierra con ``</html>``.
 * Toda página debe llevar una cabecera y un cuerpo. La cabecera se marca con ``<head>`` y ``</head>`` y el cuerpo con ``<body>`` y ``</body>``.
 * La cabecera contendrá elementos **que no se mostrarán directamente en la página web**. Mas adelante veremos alguno de esos elementos, por ahora solo hemos puesto la marca ``<title>`` que muestra el título de la página (pero solo en la barra del navegador).
+* Una de las marcas que ponemos se llama ``<meta>`` y contiene datos sobre *el juego de caracteres*. Hablaremos de esta marca más adelante.
 * Dentro del cuerpo se pondrán todos los elementos que sí formen parte directa de la página: enlaces, imágenes, botones... En este caso y por simplificar solo hemos puesto un pequeño texto rodeado por la marca ``<h1>``. Esta marca en concreto hace que el texto aparezca como una "cabecera de nivel 1" (el navegador suele mostrar dicho texto con un tamaño más grande).
 
 Ejercicio: niveles de encabezamiento
@@ -171,6 +175,7 @@ Prueba a cambiar el fichero de la página para que contenga esto
    <!DOCTYPE html>
    <html>
     <head>
+        <meta charset="utf-8">
         <title>
             Ejemplo de etiquetas de encabezamiento.
         </title>
@@ -186,6 +191,17 @@ Prueba a cambiar el fichero de la página para que contenga esto
    </html>
 
 Asegúrate de guardar,vuelve al navegador y usa el botón "recargar" (depende del navegador pero suele ser una flecha circular). También puedes hacer doble click sobre el fichero y/o usar la tecla F5 en el navegador. ¿Qué se muestra?
+
+El juego de caracteres
+=================================================
+En los comienzos de HTML era muy incómodo el escribir páginas con otro alfabeto que no fuera el anglosajón. Para evitar problemas con los símbolos propios del español (la ñ, las letras con acentos, etc...) se puede indicar al principio cual es el "alfabeto" o "juego de caracteres que usamos". La costumbre es que desde hace tiempo todos los editores como Bloc de notas y similares usen una codificación llamada "utf-8". Sin embargo, es posible que tu programa use un juego de caracteres distinto. 
+
+En la figura adjunta se muestra el Bloc de Notas. Cuando nos vamos al menú "Archivo" y elegimos la opción "Guardar como..." veremos una ventana parecida a la siguiente. Como puede verse, el bloc de notas de la figura *intenta en principio guardar usando la codificación ANSI.* Sin embargo, antes de pulsar el botón "Guardar" podemos elegir de la lista desplegable la opción "UTF-8" y poner en nuestra página HTML la etiqueta ``<meta charset="utf-8">``
+
+.. figure:: imagenes/bloc_notas_utf.png
+
+   Forzando al editor a guardar la página usando la codificación correcta.
+
 
 HTML. Consideraciones previas
 ================================
@@ -305,10 +321,6 @@ Además estas marcas se pueden combinar unas dentro de otras pero **se debe reco
 Enlaces e imágenes
 =================================================
 
-
-
-
-
 Las etiquetas de formato básico ya muestran algo, pero con esto no es suficiente para crear una página web. En esta sección veremos como crear enlaces y como insertar imágenes.
 
 Para crear un enlace vamos a necesitar dos cosas:
@@ -392,7 +404,32 @@ Teclea esta página pero antes de abrirla en el navegador piensa: ¿qué crees q
     </body>
     </html>
 
-   
+
+
+Espacios en blanco
+=================================================
+
+En HTML los espacios en blanco no actúan de la misma manera que en el Bloc de Notas o Word. De hecho, el navegador trata un espacio igual que cinco espacios o que cien líneas en blanco: todos ellos equivalen exactamente a un espacio en blanco. Por ejemplo, tecleemos la siguiente página:
+
+
+.. literalinclude:: ejemplos_html/ejemplo_04/espacios_en_blanco.html
+   :language: html
+
+Si la mostramos en el navegador veremos esto:
+
+.. figure:: imagenes/espacios_en_blanco.png
+
+   El navegador no crea líneas nuevas.
+
+La clave es que para saltar de líneas **también se tienen que usar marcas**. Así, hay dos grandes formas:
+
+* La primera es usar simplemente la marca ``<br/>``.
+* La segunda es usar la marca ``<p>`` con ``</p>`` que lo que hace es *delimitar párrafos*. El archivo siguiente ilustra como usarlas.
+
+.. literalinclude:: ejemplos_html/ejemplo_05/lineas_en_blanco.html
+   :language: html
+
+
 .. rubric:: Footnotes
    
 .. [#index] En realidad una página se puede llamar como se quiera, pero la costumbre es que la página inicial de un sitio web se llame precisamente así "index.html"

@@ -5,9 +5,11 @@
 \contentsline {chapter}{\numberline {3}Primera p\IeC {\'a}gina HTML}{7}{chapter.3}
 \contentsline {chapter}{\numberline {4}Estructura de una p\IeC {\'a}gina web}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Ejercicio: niveles de encabezamiento}{12}{section.4.1}
-\contentsline {chapter}{\numberline {5}HTML. Consideraciones previas}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Colocaci\IeC {\'o}n de las marcas}{13}{section.5.1}
-\contentsline {section}{\numberline {5.2}L\IeC {\'\i }neas en blanco}{14}{section.5.2}
-\contentsline {chapter}{\numberline {6}Primeras marcas}{17}{chapter.6}
-\contentsline {chapter}{\numberline {7}Enlaces e im\IeC {\'a}genes}{19}{chapter.7}
-\contentsline {section}{\numberline {7.1}Ejercicio: mezcla de etiquetas.}{20}{section.7.1}
+\contentsline {chapter}{\numberline {5}El juego de caracteres}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}HTML. Consideraciones previas}{15}{chapter.6}
+\contentsline {section}{\numberline {6.1}Colocaci\IeC {\'o}n de las marcas}{15}{section.6.1}
+\contentsline {section}{\numberline {6.2}L\IeC {\'\i }neas en blanco}{16}{section.6.2}
+\contentsline {chapter}{\numberline {7}Primeras marcas}{19}{chapter.7}
+\contentsline {chapter}{\numberline {8}Enlaces e im\IeC {\'a}genes}{21}{chapter.8}
+\contentsline {section}{\numberline {8.1}Ejercicio: mezcla de etiquetas.}{22}{section.8.1}
+\contentsline {chapter}{\numberline {9}Espacios en blanco}{25}{chapter.9}

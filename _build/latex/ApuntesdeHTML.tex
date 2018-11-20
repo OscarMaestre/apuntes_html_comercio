@@ -55,7 +55,7 @@
 
 
 \title{Apuntes de HTML }
-\date{10 de noviembre de 2018}
+\date{20 de noviembre de 2018}
 \release{1.0}
 \author{Oscar GG}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -168,6 +168,7 @@ Usemos ahora el Bloc de notas (a veces también llamado «editor») para escribi
 \PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
 \PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+     \PYG{p}{\PYGZlt{}}\PYG{n+nt}{meta} \PYG{n+na}{charset}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}utf\PYGZhy{}8\PYGZdq{}}\PYG{p}{\PYGZgt{}}
      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
          Mi primera página web
      \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
@@ -219,6 +220,9 @@ Si al hacer doble click la página no se abre puede que tengamos que abrir prime
 \item {} 
 Si la página se abre pero no se muestra lo mismo que en la figura casi al 100\% ha habido algún error al copiar las marcas. Vuelve al bloc de notas y repasa que todas las marcas sean exactamente iguales.
 
+\item {} 
+Si ves que se ven mal los acentos prueba a modificar la marca \sphinxcode{\sphinxupquote{\textless{}meta\textgreater{}}}. Escribe \sphinxcode{\sphinxupquote{\textless{}meta charset="iso-8859-1"\textgreater{}}}.
+
 \end{itemize}
 
 
@@ -231,6 +235,7 @@ Analicemos otra vez el fichero anterior.
 \PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
 \PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+     \PYG{p}{\PYGZlt{}}\PYG{n+nt}{meta} \PYG{n+na}{charset}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}utf\PYGZhy{}8\PYGZdq{}}\PYG{p}{\PYGZgt{}}
      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
          Mi primera página web
      \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
@@ -256,6 +261,9 @@ Toda página debe llevar una cabecera y un cuerpo. La cabecera se marca con \sph
 La cabecera contendrá elementos \sphinxstylestrong{que no se mostrarán directamente en la página web}. Mas adelante veremos alguno de esos elementos, por ahora solo hemos puesto la marca \sphinxcode{\sphinxupquote{\textless{}title\textgreater{}}} que muestra el título de la página (pero solo en la barra del navegador).
 
 \item {} 
+Una de las marcas que ponemos se llama \sphinxcode{\sphinxupquote{\textless{}meta\textgreater{}}} y contiene datos sobre \sphinxstyleemphasis{el juego de caracteres}. Hablaremos de esta marca más adelante.
+
+\item {} 
 Dentro del cuerpo se pondrán todos los elementos que sí formen parte directa de la página: enlaces, imágenes, botones… En este caso y por simplificar solo hemos puesto un pequeño texto rodeado por la marca \sphinxcode{\sphinxupquote{\textless{}h1\textgreater{}}}. Esta marca en concreto hace que el texto aparezca como una «cabecera de nivel 1» (el navegador suele mostrar dicho texto con un tamaño más grande).
 
 \end{itemize}
@@ -270,6 +278,7 @@ Prueba a cambiar el fichero de la página para que contenga esto
 \PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
 \PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
  \PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+     \PYG{p}{\PYGZlt{}}\PYG{n+nt}{meta} \PYG{n+na}{charset}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}utf\PYGZhy{}8\PYGZdq{}}\PYG{p}{\PYGZgt{}}
      \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
          Ejemplo de etiquetas de encabezamiento.
      \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
@@ -286,6 +295,20 @@ Prueba a cambiar el fichero de la página para que contenga esto
 \end{sphinxVerbatim}
 
 Asegúrate de guardar,vuelve al navegador y usa el botón «recargar» (depende del navegador pero suele ser una flecha circular). También puedes hacer doble click sobre el fichero y/o usar la tecla F5 en el navegador. ¿Qué se muestra?
+
+
+\chapter{El juego de caracteres}
+\label{\detokenize{index:el-juego-de-caracteres}}
+En los comienzos de HTML era muy incómodo el escribir páginas con otro alfabeto que no fuera el anglosajón. Para evitar problemas con los símbolos propios del español (la ñ, las letras con acentos, etc…) se puede indicar al principio cual es el «alfabeto» o «juego de caracteres que usamos». La costumbre es que desde hace tiempo todos los editores como Bloc de notas y similares usen una codificación llamada «utf-8». Sin embargo, es posible que tu programa use un juego de caracteres distinto.
+
+En la figura adjunta se muestra el Bloc de Notas. Cuando nos vamos al menú «Archivo» y elegimos la opción «Guardar como…» veremos una ventana parecida a la siguiente. Como puede verse, el bloc de notas de la figura \sphinxstyleemphasis{intenta en principio guardar usando la codificación ANSI.} Sin embargo, antes de pulsar el botón «Guardar» podemos elegir de la lista desplegable la opción «UTF-8» y poner en nuestra página HTML la etiqueta \sphinxcode{\sphinxupquote{\textless{}meta charset="utf-8"\textgreater{}}}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{bloc_notas_utf}.png}
+\caption{Forzando al editor a guardar la página usando la codificación correcta.}\label{\detokenize{index:id9}}\end{figure}
 
 
 \chapter{HTML. Consideraciones previas}
@@ -314,7 +337,7 @@ Como puede verse, el navegador ignora la posición de las marcas \sphinxstylestr
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.3]{{primera_pagina}.png}
-\caption{El navegador ignora la posición de las marcas.}\label{\detokenize{index:id9}}\end{figure}
+\caption{El navegador ignora la posición de las marcas.}\label{\detokenize{index:id10}}\end{figure}
 
 
 \section{Líneas en blanco}
@@ -347,7 +370,7 @@ Sin embargo, observa lo que muestra el navegador.
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.6]{{lineas_en_blanco}.png}
-\caption{El navegador \sphinxstylestrong{ignora las líneas en blanco}}\label{\detokenize{index:id10}}\end{figure}
+\caption{El navegador \sphinxstylestrong{ignora las líneas en blanco}}\label{\detokenize{index:id11}}\end{figure}
 
 Una pregunta muy típica es entonces \sphinxstyleemphasis{«¿como consigo escribir texto en otra línea?}. La respuesta es: utilizando una marca especial llamada \sphinxcode{\sphinxupquote{\textless{}br/\textgreater{}}}. Observa cuidadosamente la posición de la barra, ya que en este caso no es un error. Algunas marcas que no llevan nada dentro pueden escribirse de esta manera.
 
@@ -374,7 +397,7 @@ Veremos que el navegador muestra esto:
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.6]{{parrafos}.png}
-\caption{Separación de párrafos hecha por el navegador.}\label{\detokenize{index:id11}}\end{figure}
+\caption{Separación de párrafos hecha por el navegador.}\label{\detokenize{index:id12}}\end{figure}
 
 
 \chapter{Primeras marcas}
@@ -419,7 +442,7 @@ van en \PYG{p}{\PYGZlt{}}\PYG{n+nt}{b}\PYG{p}{\PYGZgt{}}\PYG{p}{\PYGZlt{}}\PYG{n
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.6]{{primeras_marcas}.png}
-\caption{Primeras marcas}\label{\detokenize{index:id12}}\end{figure}
+\caption{Primeras marcas}\label{\detokenize{index:id13}}\end{figure}
 
 
 \chapter{Enlaces e imágenes}
@@ -461,7 +484,7 @@ Si lo guardamos y lo abrimos con el navegador veremos algo como esto (obsérvese
 \capstart
 
 \noindent\sphinxincludegraphics{{primer_enlace}.png}
-\caption{Un primer enlace.}\label{\detokenize{index:id13}}\end{figure}
+\caption{Un primer enlace.}\label{\detokenize{index:id14}}\end{figure}
 
 Como puede verse, ahora la etiqueta no es simplemente \sphinxcode{\sphinxupquote{\textless{}a\textgreater{}}} sino que hay información adicional. Esta información adicional a las marcas se llama \sphinxstylestrong{atributo}. Así esta marca dice dos cosas:
 \begin{enumerate}
@@ -500,7 +523,7 @@ A continuación se puede ver el resultado.
 \capstart
 
 \noindent\sphinxincludegraphics{{primera_imagen}.png}
-\caption{Un ejemplo de imagen.}\label{\detokenize{index:id14}}\end{figure}
+\caption{Un ejemplo de imagen.}\label{\detokenize{index:id15}}\end{figure}
 
 Como puede verse, la etiqueta \sphinxcode{\sphinxupquote{img}} ahora lleva 3 atributos:
 \begin{itemize}
@@ -534,6 +557,69 @@ Teclea esta página pero antes de abrirla en el navegador piensa: ¿qué crees q
         \PYG{p}{\PYGZlt{}}\PYG{n+nt}{img} \PYG{n+na}{src}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}estrella.jpg\PYGZdq{}} \PYG{n+na}{width}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}128px\PYGZdq{}} \PYG{n+na}{height}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}128px\PYGZdq{}}\PYG{p}{\PYGZgt{}}
     \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}}
 \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\end{sphinxVerbatim}
+
+
+\chapter{Espacios en blanco}
+\label{\detokenize{index:espacios-en-blanco}}
+En HTML los espacios en blanco no actúan de la misma manera que en el Bloc de Notas o Word. De hecho, el navegador trata un espacio igual que cinco espacios o que cien líneas en blanco: todos ellos equivalen exactamente a un espacio en blanco. Por ejemplo, tecleemos la siguiente página:
+
+\fvset{hllines={, ,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}Espacios en blanco\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+    Aqui hay espacios de distintas longitudes.
+    Se supone que esto va debajo.
+    Mas texto.
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+\end{sphinxVerbatim}
+
+Si la mostramos en el navegador veremos esto:
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{espacios_en_blanco}.png}
+\caption{El navegador no crea líneas nuevas.}\label{\detokenize{index:id16}}\end{figure}
+
+La clave es que para saltar de líneas \sphinxstylestrong{también se tienen que usar marcas}. Así, hay dos grandes formas:
+\begin{itemize}
+\item {} 
+La primera es usar simplemente la marca \sphinxcode{\sphinxupquote{\textless{}br/\textgreater{}}}.
+
+\item {} 
+La segunda es usar la marca \sphinxcode{\sphinxupquote{\textless{}p\textgreater{}}} con \sphinxcode{\sphinxupquote{\textless{}/p\textgreater{}}} que lo que hace es \sphinxstyleemphasis{delimitar párrafos}. El archivo siguiente ilustra como usarlas.
+
+\end{itemize}
+
+\fvset{hllines={, ,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}!DOCTYPE html\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}Ejemplo de espacios\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{title}\PYG{p}{\PYGZgt{}}
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{head}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}Esto es un párrafo\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}.
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}Esto es otro párrafo\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}.
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}
+        Aunque los párrafos anteriores están en la misma línea, en realidad se ven como dos párrafos separados.
+    \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{p}\PYG{p}{\PYGZgt{}}
+    En esta otra línea se crean los \PYG{p}{\PYGZlt{}}\PYG{n+nt}{br}\PYG{p}{/}\PYG{p}{\PYGZgt{}} espacios de otra manera distinta.
+\PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{body}\PYG{p}{\PYGZgt{}}
+
 \PYG{p}{\PYGZlt{}}\PYG{p}{/}\PYG{n+nt}{html}\PYG{p}{\PYGZgt{}}
 \end{sphinxVerbatim}
 

@@ -95,6 +95,7 @@
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>
          Mi primera página web
      <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
@@ -125,6 +126,7 @@
 <ul class="simple">
 <li>Si al hacer doble click la página no se abre puede que tengamos que abrir primero el navegador y desde él usar el menú «Archivo» y luego «Abrir». Despues podremos ir a la carpeta «Mis documentos», «html», «ejemplo_01» y seleccionar el archivo «index.html»</li>
 <li>Si la página se abre pero no se muestra lo mismo que en la figura casi al 100% ha habido algún error al copiar las marcas. Vuelve al bloc de notas y repasa que todas las marcas sean exactamente iguales.</li>
+<li>Si ves que se ven mal los acentos prueba a modificar la marca <code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code>. Escribe <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">charset=&quot;iso-8859-1&quot;&gt;</span></code>.</li>
 </ul>
 </div>
 <div class="section" id="estructura-de-una-pagina-web">
@@ -133,6 +135,7 @@
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>
          Mi primera página web
      <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
@@ -149,6 +152,7 @@
 <li>Toda página empieza por la marca <code class="docutils literal notranslate"><span class="pre">&lt;html&gt;</span></code> y se cierra con <code class="docutils literal notranslate"><span class="pre">&lt;/html&gt;</span></code>.</li>
 <li>Toda página debe llevar una cabecera y un cuerpo. La cabecera se marca con <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> y <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code> y el cuerpo con <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> y <code class="docutils literal notranslate"><span class="pre">&lt;/body&gt;</span></code>.</li>
 <li>La cabecera contendrá elementos <strong>que no se mostrarán directamente en la página web</strong>. Mas adelante veremos alguno de esos elementos, por ahora solo hemos puesto la marca <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;</span></code> que muestra el título de la página (pero solo en la barra del navegador).</li>
+<li>Una de las marcas que ponemos se llama <code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> y contiene datos sobre <em>el juego de caracteres</em>. Hablaremos de esta marca más adelante.</li>
 <li>Dentro del cuerpo se pondrán todos los elementos que sí formen parte directa de la página: enlaces, imágenes, botones… En este caso y por simplificar solo hemos puesto un pequeño texto rodeado por la marca <code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code>. Esta marca en concreto hace que el texto aparezca como una «cabecera de nivel 1» (el navegador suele mostrar dicho texto con un tamaño más grande).</li>
 </ul>
 <div class="section" id="ejercicio-niveles-de-encabezamiento">
@@ -157,6 +161,7 @@
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>
          Ejemplo de etiquetas de encabezamiento.
      <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
@@ -175,6 +180,15 @@
 <p>Asegúrate de guardar,vuelve al navegador y usa el botón «recargar» (depende del navegador pero suele ser una flecha circular). También puedes hacer doble click sobre el fichero y/o usar la tecla F5 en el navegador. ¿Qué se muestra?</p>
 </div>
 </div>
+<div class="section" id="el-juego-de-caracteres">
+<h1>El juego de caracteres<a class="headerlink" href="#el-juego-de-caracteres" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En los comienzos de HTML era muy incómodo el escribir páginas con otro alfabeto que no fuera el anglosajón. Para evitar problemas con los símbolos propios del español (la ñ, las letras con acentos, etc…) se puede indicar al principio cual es el «alfabeto» o «juego de caracteres que usamos». La costumbre es que desde hace tiempo todos los editores como Bloc de notas y similares usen una codificación llamada «utf-8». Sin embargo, es posible que tu programa use un juego de caracteres distinto.</p>
+<p>En la figura adjunta se muestra el Bloc de Notas. Cuando nos vamos al menú «Archivo» y elegimos la opción «Guardar como…» veremos una ventana parecida a la siguiente. Como puede verse, el bloc de notas de la figura <em>intenta en principio guardar usando la codificación ANSI.</em> Sin embargo, antes de pulsar el botón «Guardar» podemos elegir de la lista desplegable la opción «UTF-8» y poner en nuestra página HTML la etiqueta <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">charset=&quot;utf-8&quot;&gt;</span></code></p>
+<div class="figure" id="id9">
+<img alt="_images/bloc_notas_utf.png" src="_images/bloc_notas_utf.png" />
+<p class="caption"><span class="caption-text">Forzando al editor a guardar la página usando la codificación correcta.</span></p>
+</div>
+</div>
 <div class="section" id="html-consideraciones-previas">
 <h1>HTML. Consideraciones previas<a class="headerlink" href="#html-consideraciones-previas" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Al crear una página web con HTML hay algunos detalles sutiles como los siguientes:</p>
@@ -190,7 +204,7 @@
 </pre></div>
 </div>
 <p>Como puede verse, el navegador ignora la posición de las marcas <strong>y muestra exactamente lo mismo</strong>. Debido a eso la costumbre es colocar las marcas de manera que «mas o menos se vea la estructura». De hecho podría escribirse toda la página web en una sola línea y el navegador seguiría haciendo lo mismo.</p>
-<div class="figure" id="id9">
+<div class="figure" id="id10">
 <a class="reference internal image-reference" href="_images/primera_pagina.png"><img alt="_images/primera_pagina.png" src="_images/primera_pagina.png" style="width: 226.2px; height: 49.199999999999996px;" /></a>
 <p class="caption"><span class="caption-text">El navegador ignora la posición de las marcas.</span></p>
 </div>
@@ -216,7 +230,7 @@
 </pre></div>
 </div>
 <p>Sin embargo, observa lo que muestra el navegador.</p>
-<div class="figure" id="id10">
+<div class="figure" id="id11">
 <a class="reference internal image-reference" href="_images/lineas_en_blanco.png"><img alt="_images/lineas_en_blanco.png" src="_images/lineas_en_blanco.png" style="width: 515.4px; height: 94.8px;" /></a>
 <p class="caption"><span class="caption-text">El navegador <strong>ignora las líneas en blanco</strong></span></p>
 </div>
@@ -235,7 +249,7 @@
 </pre></div>
 </div>
 <p>Veremos que el navegador muestra esto:</p>
-<div class="figure" id="id11">
+<div class="figure" id="id12">
 <a class="reference internal image-reference" href="_images/parrafos.png"><img alt="_images/parrafos.png" src="_images/parrafos.png" style="width: 273.59999999999997px; height: 139.79999999999998px;" /></a>
 <p class="caption"><span class="caption-text">Separación de párrafos hecha por el navegador.</span></p>
 </div>
@@ -267,7 +281,7 @@ van en <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&
 </pre></div>
 </div>
 <p>…entonces podremos visualizar qué ocurre. Como puede verse se han mezclado las etiquetas y esto puede hacerse siempre y en cualquier orden pero <strong>recordando cerrar en orden inverso</strong>. Por ejemplo, en el archivo hemos puesto las tres cosas (negrita, cursiva y subrayado) abriendo con <code class="docutils literal notranslate"><span class="pre">&lt;i&gt;&lt;u&gt;&lt;b&gt;</span></code>. Así, luego hemos cerrado con <code class="docutils literal notranslate"><span class="pre">&lt;/b&gt;&lt;/u&gt;&lt;/i&gt;</span></code></p>
-<div class="figure" id="id12">
+<div class="figure" id="id13">
 <a class="reference internal image-reference" href="_images/primeras_marcas.png"><img alt="_images/primeras_marcas.png" src="_images/primeras_marcas.png" style="width: 683.4px; height: 79.8px;" /></a>
 <p class="caption"><span class="caption-text">Primeras marcas</span></p>
 </div>
@@ -293,7 +307,7 @@ van en <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&
 </pre></div>
 </div>
 <p>Si lo guardamos y lo abrimos con el navegador veremos algo como esto (obsérvese que lo hemos abierto en un navegador diferente, pero esto no influirá en nada).</p>
-<div class="figure" id="id13">
+<div class="figure" id="id14">
 <img alt="_images/primer_enlace.png" src="_images/primer_enlace.png" />
 <p class="caption"><span class="caption-text">Un primer enlace.</span></p>
 </div>
@@ -317,7 +331,7 @@ van en <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&
 </pre></div>
 </div>
 <p>A continuación se puede ver el resultado.</p>
-<div class="figure" id="id14">
+<div class="figure" id="id15">
 <img alt="_images/primera_imagen.png" src="_images/primera_imagen.png" />
 <p class="caption"><span class="caption-text">Un ejemplo de imagen.</span></p>
 </div>
@@ -344,6 +358,56 @@ van en <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
+</div>
+</div>
+<div class="section" id="espacios-en-blanco">
+<h1>Espacios en blanco<a class="headerlink" href="#espacios-en-blanco" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En HTML los espacios en blanco no actúan de la misma manera que en el Bloc de Notas o Word. De hecho, el navegador trata un espacio igual que cinco espacios o que cien líneas en blanco: todos ellos equivalen exactamente a un espacio en blanco. Por ejemplo, tecleemos la siguiente página:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Espacios en blanco<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    Aqui hay espacios de distintas longitudes.
+    Se supone que esto va debajo.
+    Mas texto.
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Si la mostramos en el navegador veremos esto:</p>
+<div class="figure" id="id16">
+<img alt="_images/espacios_en_blanco.png" src="_images/espacios_en_blanco.png" />
+<p class="caption"><span class="caption-text">El navegador no crea líneas nuevas.</span></p>
+</div>
+<p>La clave es que para saltar de líneas <strong>también se tienen que usar marcas</strong>. Así, hay dos grandes formas:</p>
+<ul class="simple">
+<li>La primera es usar simplemente la marca <code class="docutils literal notranslate"><span class="pre">&lt;br/&gt;</span></code>.</li>
+<li>La segunda es usar la marca <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code> con <code class="docutils literal notranslate"><span class="pre">&lt;/p&gt;</span></code> que lo que hace es <em>delimitar párrafos</em>. El archivo siguiente ilustra como usarlas.</li>
+</ul>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ejemplo de espacios<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Esto es un párrafo<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>.
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Esto es otro párrafo<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>.
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+        Aunque los párrafos anteriores están en la misma línea, en realidad se ven como dos párrafos separados.
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    En esta otra línea se crean los <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> espacios de otra manera distinta.
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
 <p class="rubric">Footnotes</p>
 <table class="docutils footnote" frame="void" id="index" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -351,7 +415,6 @@ van en <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;&
 <tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>En realidad una página se puede llamar como se quiera, pero la costumbre es que la página inicial de un sitio web se llame precisamente así «index.html»</td></tr>
 </tbody>
 </table>
-</div>
 </div>
 
 
